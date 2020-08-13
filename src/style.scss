@@ -1,11 +1,11 @@
 .indiana-scroll-container {
   overflow: auto;
+  cursor: grab;
+
   &--dragging {
-    > * {
-      pointer-events: none;
-      cursor: grab;
-    }
+    cursor: grabbing;
   }
+
   &--hide-scrollbars {
     overflow: hidden;
     overflow: -moz-scrollbars-none;
@@ -22,8 +22,4 @@
   &--native-scroll {
     overflow: auto;
   }
-}
-
-.indiana-dragging {
-  cursor: grab !important;
 }
