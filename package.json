@@ -1,5 +1,5 @@
 {
-  "name": "react-indiana-drag-scroll",
+  "name": "@adalo/react-indiana-drag-scroll",
   "version": "1.7.0",
   "description": "Implements scroll on drag",
   "author": "Norserium",
