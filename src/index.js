@@ -268,14 +268,19 @@ export default class ScrollContainer extends PureComponent {
 
   // opts: {x: number, y: number, animated: boolean}
   scrollTo(opts) {
-    const { x, y } = opts
+    const { x, y, animated } = opts
     const container = this.container.current
 
-    container.scrollTo({
-      top: y,
-      left: x,
-      behavior: 'smooth'
-    })
+    if (animated) {
+      container.scrollTo({
+        top: y,
+        left: x,
+        behavior: 'smooth'
+      })
+    } else {
+      container.scrollLeft = x
+      container.scrollTop = y
+    }
   }
 
   // Process non-native scroll

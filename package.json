@@ -2,7 +2,7 @@
   "name": "@adalo/react-indiana-drag-scroll",
   "version": "1.7.0",
   "description": "Implements scroll on drag",
-  "author": "Norserium",
+  "author": "Adalo",
   "license": "MIT",
   "repository": "norserium/react-indiana-drag-scroll",
   "main": "dist/index.js",
